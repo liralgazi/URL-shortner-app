@@ -3,11 +3,12 @@ import FormContainer from "../FormContainer/FormContainer";
 import { UrlData } from "../../interface/UrlData";
 import axios from "axios";
 import { serverUrl } from "../../helpers/Consts";
+import DataTable from "../DataTable/DataTable";
 
 interface IContainerProps {}
 
 const Container: React.FunctionComponent<IContainerProps> = () => {
-  const [data, setData] = React.useState<UrlData>([]);
+  const [data, setData] = React.useState<UrlData[]>([]);
 
   //creating a function that will fetch the data from the db
   const fetchTableData = async () => {
@@ -24,6 +25,7 @@ const Container: React.FunctionComponent<IContainerProps> = () => {
   return (
     <>
       <FormContainer />;
+      <DataTable data={data} />
     </>
   );
 };
