@@ -1,12 +1,11 @@
 import * as React from "react";
+import "./Footer.css"; // Import CSS file
 
-interface IFooterProps {}
-
-const Footer: React.FunctionComponent<IFooterProps> = () => {
+const Footer: React.FunctionComponent = () => {
   return (
-    <div className="bg-slate-900 text-white text-base text-center py-5">
+    <footer className="footer">
       Copyright &#169; URLShortner | Lir Algazi
-    </div>
+    </footer>
   );
 };
 

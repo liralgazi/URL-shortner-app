@@ -1,15 +1,13 @@
 import * as React from "react";
+import "./Header.css"; // Import CSS file
 
-interface IHeaderProps {}
-
-const Header: React.FunctionComponent<IHeaderProps> = () => {
+const Header: React.FunctionComponent = () => {
   return (
-    <div className="bg-slate-900">
-      <div className="container p-2 mx-auto"></div>
-      <nav className="py-5">
-        <div className="text-base text-white">URLShortner</div>
+    <header className="header">
+      <nav>
+        <div className="title">URLShortner</div>
       </nav>
-    </div>
+    </header>
   );
 };
 
