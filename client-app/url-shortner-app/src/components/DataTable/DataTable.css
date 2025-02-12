@@ -1,0 +1,47 @@
+.table-container {
+    margin: 20px auto;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #2d3748;
+    color: white;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #4a5568;
+  }
+  
+  .table-row:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .link {
+    color: #63b3ed;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .button {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+  }
+  
+  .button.delete {
+    background-color: #e53e3e;
+  }
+  
